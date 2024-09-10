@@ -11,6 +11,10 @@
 		FEBA36142C906E8400A3A466 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBA36132C906E8400A3A466 /* ContentView.swift */; };
 		FEBA36162C906E8500A3A466 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEBA36152C906E8500A3A466 /* Assets.xcassets */; };
 		FEBA36192C906E8500A3A466 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEBA36182C906E8500A3A466 /* Preview Assets.xcassets */; };
+		FEBA36222C906F1100A3A466 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBA36212C906F1100A3A466 /* TodoItem.swift */; };
+		FEBA36252C90720200A3A466 /* Usercentrics in Frameworks */ = {isa = PBXBuildFile; productRef = FEBA36242C90720200A3A466 /* Usercentrics */; };
+		FEBA36282C90720E00A3A466 /* UsercentricsUI in Frameworks */ = {isa = PBXBuildFile; productRef = FEBA36272C90720E00A3A466 /* UsercentricsUI */; };
+		FEBA362A2C9074C900A3A466 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBA36292C9074C900A3A466 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,8 @@
 		FEBA36132C906E8400A3A466 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FEBA36152C906E8500A3A466 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEBA36182C906E8500A3A466 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FEBA36212C906F1100A3A466 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		FEBA36292C9074C900A3A466 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +32,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEBA36282C90720E00A3A466 /* UsercentricsUI in Frameworks */,
+				FEBA36252C90720200A3A466 /* Usercentrics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +63,8 @@
 				FEBA36132C906E8400A3A466 /* ContentView.swift */,
 				FEBA36152C906E8500A3A466 /* Assets.xcassets */,
 				FEBA36172C906E8500A3A466 /* Preview Content */,
+				FEBA36212C906F1100A3A466 /* TodoItem.swift */,
+				FEBA36292C9074C900A3A466 /* AppDelegate.swift */,
 			);
 			path = SimpleToDoList;
 			sourceTree = "<group>";
@@ -83,6 +93,10 @@
 			dependencies = (
 			);
 			name = SimpleToDoList;
+			packageProductDependencies = (
+				FEBA36242C90720200A3A466 /* Usercentrics */,
+				FEBA36272C90720E00A3A466 /* UsercentricsUI */,
+			);
 			productName = SimpleToDoList;
 			productReference = FEBA360E2C906E8400A3A466 /* SimpleToDoList.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,10 @@
 				Base,
 			);
 			mainGroup = FEBA36052C906E8400A3A466;
+			packageReferences = (
+				FEBA36232C90720200A3A466 /* XCRemoteSwiftPackageReference "usercentrics-spm-sdk" */,
+				FEBA36262C90720E00A3A466 /* XCRemoteSwiftPackageReference "usercentrics-spm-ui" */,
+			);
 			productRefGroup = FEBA360F2C906E8400A3A466 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEBA362A2C9074C900A3A466 /* AppDelegate.swift in Sources */,
 				FEBA36142C906E8400A3A466 /* ContentView.swift in Sources */,
+				FEBA36222C906F1100A3A466 /* TodoItem.swift in Sources */,
 				FEBA36122C906E8400A3A466 /* SimpleToDoListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +362,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FEBA36232C90720200A3A466 /* XCRemoteSwiftPackageReference "usercentrics-spm-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://bitbucket.org/usercentricscode/usercentrics-spm-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.16.0;
+			};
+		};
+		FEBA36262C90720E00A3A466 /* XCRemoteSwiftPackageReference "usercentrics-spm-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://bitbucket.org/usercentricscode/usercentrics-spm-ui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.16.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FEBA36242C90720200A3A466 /* Usercentrics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEBA36232C90720200A3A466 /* XCRemoteSwiftPackageReference "usercentrics-spm-sdk" */;
+			productName = Usercentrics;
+		};
+		FEBA36272C90720E00A3A466 /* UsercentricsUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEBA36262C90720E00A3A466 /* XCRemoteSwiftPackageReference "usercentrics-spm-ui" */;
+			productName = UsercentricsUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FEBA36062C906E8400A3A466 /* Project object */;
 }
